@@ -1,0 +1,210 @@
+/*
+Theme Name: GoldenComm
+Author: Kenny Nham
+Description: Custom theme created for GoldenComm
+Text Domain: goldencomm
+*/
+
+/* Normalize */
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Typography*/
+body{
+    font-size: 16px;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: black;
+    text-transform: uppercase;
+}
+
+/*Global Styles*/
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: grey;
+}
+a:visited {
+    color: black;
+}
+
+/*Nav Styles*/
+nav {
+    background-color: aliceblue;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav li a:hover {
+    color: pink;
+}
+
+/*Header Styles*/
+
+/*Footer Styles*/
+footer {
+    background-color: aliceblue;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer li {
+    float: left;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer li a {
+    color: black;
+    position: relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 16px;
+}
+
+footer li a:hover {
+    color: pink;
+}
+
+/* Front Page */
+.front-landing {
+    height: 100vh;
+    background: url("img/Nails3.jpeg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-position: center center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+.front-landing-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+}
+
+.front header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+}
+
+.button-apt {
+    font: 20px sans-serif;
+    background-color: aliceblue;
+    color: white;
+    padding: 16px 10px 16px 10px;
+    border-radius: 12px;
+    display: block;
+    z-index: 100;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.button-apt a:hover {
+    color: pink;
+}
+
+/*full-width page*/
+.main-content-width-wrapper {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+
+/* Column Scaling */
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
